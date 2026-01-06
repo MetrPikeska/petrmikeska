@@ -1,9 +1,10 @@
 import React from 'react';
 import { SectionWrapper } from './SectionWrapper';
+import jaImage from '../assets/ja.jpg';
 
 export function About() {
   return (
-    <SectionWrapper id="about" title="About Me">
+    <SectionWrapper id="about" title="O mně">
       <div className="grid grid-cols-12 gap-12">
         <div className="col-span-8">
           <div className="space-y-6 text-neutral-700 leading-relaxed">
@@ -50,9 +51,12 @@ export function About() {
         </div>
         
         <div className="col-span-4">
-          <div className="bg-neutral-200 border-2 border-neutral-300 aspect-square flex items-center justify-center">
-            <span className="text-neutral-400">[Portrait placeholder]</span>
-          </div>
+          <img 
+            src={jaImage} 
+            alt="Petr Mikeska" 
+            className="w-full aspect-square object-cover border-2 border-neutral-300"
+            style={{ borderRadius: '8px' }}
+          />
         </div>
       </div>
     </SectionWrapper>

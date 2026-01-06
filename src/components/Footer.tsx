@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
 
 export function Footer() {
@@ -43,8 +43,8 @@ export function Footer() {
         </div>
         
         <div className="pt-8 flex justify-between items-center text-neutral-400 text-sm">
-          <p>© 2025 petrmikeska.cz</p>
-          <p>Petr Mikeska — Geoinformatika a GIS analytik</p>
+          <p> 2026 petrmikeska.cz</p>
+          <p>Petr Mikeska  Geoinformatik a GIS analytik</p>
         </div>
       </div>
     </footer>
