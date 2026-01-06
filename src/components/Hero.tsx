@@ -10,24 +10,19 @@ export function Hero({ onNavigate }: HeroProps) {
   return (
     <section 
       id="home" 
-      className="pt-24 min-h-screen overflow-hidden"
-      style={{ position: 'relative' }}
+      className="pt-24 min-h-screen"
+      style={{ 
+        position: 'relative',
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
     >
-      {/* Background Image */}
-      <img 
-        src={backgroundImage} 
-        alt="Background" 
-        className="w-full h-full object-cover pointer-events-none"
-        style={{ position: 'absolute', inset: 0, zIndex: 0 }}
-      />
-      
-      {/* Dark Overlay */}
-      <div className="bg-black/40 pointer-events-none" style={{ position: 'absolute', inset: 0, zIndex: 10 }} />
-      
       {/* Content */}
       <div className="max-w-[1440px] mx-auto px-16 py-32 w-full flex items-center min-h-screen" style={{ position: 'relative', zIndex: 20 }}>
-        <div className="max-w-4xl">
-          <div className="pl-8 mb-12" style={{ borderLeft: '4px solid white', position: 'relative', zIndex: 30 }}>
+        <div className="max-w-4xl p-8" style={{ backgroundColor: 'rgba(255, 255, 255, 0.82)', borderRadius: '8px' }}>
+          <div className="pl-8 mb-12" style={{ borderLeft: '4px solid white', position: 'relative' }}>
             <h1 className="text-white mb-6 text-5xl font-bold">
               Petr Mikeska
             </h1>

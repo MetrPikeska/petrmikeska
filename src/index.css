@@ -927,6 +927,10 @@ html {
   font-size: var(--font-size);
 }
 
+body {
+  background-color: white;
+}
+
 @property --tw-space-y-reverse {
   syntax: "*";
   inherits: false;
