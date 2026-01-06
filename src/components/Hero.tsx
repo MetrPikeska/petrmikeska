@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from './Button';
+import backgroundImage from '../assets/background.jpg';
 
 interface HeroProps {
   onNavigate: (sectionId: string) => void;
@@ -7,17 +8,33 @@ interface HeroProps {
 
 export function Hero({ onNavigate }: HeroProps) {
   return (
-    <section id="home" className="pt-24 min-h-screen flex items-center bg-neutral-100">
-      <div className="max-w-[1440px] mx-auto px-16 py-32 w-full">
+    <section 
+      id="home" 
+      className="pt-24 min-h-screen overflow-hidden"
+      style={{ position: 'relative' }}
+    >
+      {/* Background Image */}
+      <img 
+        src={backgroundImage} 
+        alt="Background" 
+        className="w-full h-full object-cover pointer-events-none"
+        style={{ position: 'absolute', inset: 0, zIndex: 0 }}
+      />
+      
+      {/* Dark Overlay */}
+      <div className="bg-black/40 pointer-events-none" style={{ position: 'absolute', inset: 0, zIndex: 10 }} />
+      
+      {/* Content */}
+      <div className="max-w-[1440px] mx-auto px-16 py-32 w-full flex items-center min-h-screen" style={{ position: 'relative', zIndex: 20 }}>
         <div className="max-w-4xl">
-          <div className="border-l-4 border-neutral-900 pl-8 mb-12">
-            <h1 className="text-neutral-900 mb-6">
+          <div className="pl-8 mb-12" style={{ borderLeft: '4px solid white', position: 'relative', zIndex: 30 }}>
+            <h1 className="text-white mb-6 text-5xl font-bold">
               Petr Mikeska
             </h1>
-            <h2 className="text-neutral-700 mb-6">
-              Geoinformatika & GIS analytik
+            <h2 className="text-neutral-100 mb-6 text-2xl">
+              Geoinformatik, GIS analytik a vývojář webových mapových aplikací 
             </h2>
-            <p className="text-neutral-600 max-w-2xl">
+            <p className="text-neutral-100 max-w-2xl text-lg">
               Student geoinformatiky a kartografie se zaměřením na programování a webové technologie. Propojuji GIS, databáze a webové nástroje do praktických mapových řešení.
             </p>
           </div>
@@ -32,6 +49,8 @@ export function Hero({ onNavigate }: HeroProps) {
           </div>
         </div>
       </div>
+    
+
     </section>
   );
 }
