@@ -53,6 +53,31 @@
     build: {
       target: 'esnext',
       outDir: 'build',
+      // SEO a výkonové optimalizace
+      minify: 'terser',
+      terserOptions: {
+        compress: {
+          drop_console: true, // Odstranit console.log v produkci
+          drop_debugger: true,
+        },
+      },
+      rollupOptions: {
+        output: {
+          // Code splitting pro lepší načítání
+          manualChunks: {
+            'react-vendor': ['react', 'react-dom'],
+            'ui-vendor': [
+              '@radix-ui/react-accordion',
+              '@radix-ui/react-dialog',
+              '@radix-ui/react-popover',
+            ],
+          },
+        },
+      },
+      // Optimalizace velikosti
+      chunkSizeWarningLimit: 1000,
+      cssCodeSplit: true,
+      sourcemap: false, // Vypnout sourcemapy v produkci
     },
     server: {
       port: 3000,

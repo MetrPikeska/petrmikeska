@@ -5,11 +5,11 @@ import jaImage from '../assets/ja.jpg';
 export function About() {
   return (
     <SectionWrapper id="about" title="O mně">
-      <div className="grid grid-cols-12 gap-12">
+      <article className="grid grid-cols-12 gap-12" itemScope itemType="https://schema.org/Person">
         <div className="col-span-8">
           <div className="space-y-6 text-neutral-700 leading-relaxed">
-            <p>
-              Jmenuji se Petr Mikeska a jsem student geoinformatiky a kartografie se zaměřením na programování a webové technologie. Věnuji se propojování GIS, databází a webových nástrojů do přehledných a prakticky využitelných mapových řešení.
+            <p itemProp="description">
+              Jmenuji se <span itemProp="name">Petr Mikeska</span> a jsem student geoinformatiky a kartografie se zaměřením na programování a webové technologie. Věnuji se propojování GIS, databází a webových nástrojů do přehledných a prakticky využitelných mapových řešení.
             </p>
             <p>
               Můj technický základ vychází ze studia na{' '}
@@ -17,10 +17,14 @@ export function About() {
                 href="https://www.ssinfotech.cz" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                itemProp="alumniOf"
+                itemScope
+                itemType="https://schema.org/EducationalOrganization"
                 style={{ color: '#0066cc', textDecoration: 'underline', fontWeight: '600' }}
                 className="hover:opacity-80"
+                aria-label="Střední škola informačních technologií"
               >
-                Střední škole informačních technologií
+                <span itemProp="name">Střední škole informačních technologií</span>
               </a>
               , kde jsem absolvoval obor Počítačové systémy a správa sítí zakončený maturitní zkouškou. Studium bylo zaměřeno na informační technologie, správu systémů, počítačové sítě a základy programování.
             </p>
@@ -30,10 +34,14 @@ export function About() {
                 href="https://geoinformatics.upol.cz" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                itemProp="alumniOf"
+                itemScope
+                itemType="https://schema.org/EducationalOrganization"
                 style={{ color: '#0066cc', textDecoration: 'underline', fontWeight: '600' }}
                 className="hover:opacity-80"
+                aria-label="Katedra geoinformatiky Univerzity Palackého v Olomouci"
               >
-                Katedře geoinformatiky Univerzity Palackého v Olomouci
+                <span itemProp="name">Katedře geoinformatiky Univerzity Palackého v Olomouci</span>
               </a>
               . V rámci bakalářské práce jsem vytvořil uživatelský GIS toolbox pro hodnocení dostupnosti zelených ploch a parků pro obyvatele měst. Práce je dostupná{' '}
               <a 
@@ -42,6 +50,7 @@ export function About() {
                 rel="noopener noreferrer"
                 style={{ color: '#0066cc', textDecoration: 'underline', fontWeight: '600' }}
                 className="hover:opacity-80"
+                aria-label="Bakalářská práce - dostupnost zelených ploch"
               >
                 zde
               </a>
@@ -56,12 +65,16 @@ export function About() {
         <div className="col-span-4">
           <img 
             src={jaImage} 
-            alt="Petr Mikeska" 
+            alt="Bc. Petr Mikeska - Geoinformatik a GIS analytik" 
+            itemProp="image"
             className="w-full object-contain border-2 border-neutral-300"
             style={{ borderRadius: '8px', marginTop: '-2rem' }}
+            loading="lazy"
+            width="400"
+            height="600"
           />
         </div>
-      </div>
+      </article>
     </SectionWrapper>
   );
 }

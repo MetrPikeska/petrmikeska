@@ -18,13 +18,14 @@ export function Skills() {
       skills: [
         { icon: Code, label: 'Python', description: 'Analýzy, GIS, data processing' },
         { icon: Code, label: 'C#', description: 'Základy, desktop / logika' },
-        { icon: Code, label: 'JavaScript', description: 'Webový vývoj' }
+        { icon: Code, label: 'JavaScript', description: 'Webový vývoj' },
+        { icon: Code, label: 'Git', description: 'Verzování kódu' }
       ]
     },
     {
       category: 'Web & mapové aplikace',
       skills: [
-        
+        { icon: Code, label: 'HTML/CSS', description: 'Frontend technologie' },
         { icon: Globe, label: 'Leaflet', description: 'Interaktivní mapy' },
         { icon: Server, label: 'REST API', description: 'API integrace' },
         { icon: Map, label: 'GeoJSON, WMS, WFS', description: 'Geo formáty' }
@@ -35,7 +36,8 @@ export function Skills() {
       skills: [
         { icon: Database, label: 'PostgreSQL', description: 'Relační databáze' },
         { icon: Database, label: 'PostGIS', description: 'Prostorová data' },
-        { icon: Database, label: 'Návrh schémat', description: 'Databázový design' }
+        { icon: Database, label: 'Návrh schémat', description: 'Databázový design' },
+        { icon: Database, label: 'SQL optimalizace', description: 'Indexy a výkon' }
       ]
     },
     {
@@ -43,13 +45,14 @@ export function Skills() {
       skills: [
         { icon: Brain, label: 'YOLO', description: 'Objektová detekce' },
         { icon: Brain, label: 'Video processing', description: 'Zpracování videozáznamů' },
-        { icon: Box, label: 'Inference', description: 'Kamerová data' }
+        { icon: Box, label: 'Inference', description: 'Kamerová data' },
+        { icon: Brain, label: 'OpenCV', description: 'Zpracování obrazu' }
       ]
     }
   ];
 
   return (
-    <SectionWrapper id="skills" title="Nástroje">
+    <SectionWrapper id="skills" title="Zkušensoti & dovednosti">
       <div className="space-y-12">
         {skillCategories.map((category, catIndex) => (
           <div key={catIndex}>

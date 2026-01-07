@@ -44,13 +44,13 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-neutral-50">
+    <div className="min-h-screen bg-neutral-50" lang="cs">
       <Navigation 
         activeSection={activeSection} 
         onNavigate={scrollToSection}
       />
       
-      <main>
+      <main role="main" aria-label="Hlavní obsah">
         <Hero onNavigate={scrollToSection} />
         <About />
         <Skills />

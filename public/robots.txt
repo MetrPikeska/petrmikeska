@@ -1,0 +1,10 @@
+# robots.txt pro petrmikeska.cz
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://petrmikeska.cz/sitemap.xml
+
+# Crawl-delay (volitelné, pro optimalizaci)
+Crawl-delay: 1
