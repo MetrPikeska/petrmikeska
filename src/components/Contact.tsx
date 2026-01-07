@@ -1,7 +1,7 @@
 import React from 'react';
 import { SectionWrapper } from './SectionWrapper';
 import { Button } from './Button';
-import { Mail, Github, Linkedin, Globe } from 'lucide-react';
+import { Mail, Github, Linkedin, Globe, Phone } from 'lucide-react';
 
 export function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
@@ -69,7 +69,7 @@ export function Contact() {
           <address className="bg-neutral-100 border-2 border-neutral-300 p-8 not-italic">
             <h3 className="text-neutral-900 mb-6">Kontaktujte mě</h3>
             <p className="text-neutral-600 mb-8">
-              Pokud máte zájem o spolupráci, výzkumné projekty nebo geoprostorová řešení, neváhejte mě kontaktovat.
+              Pokud máte zájem o spolupráci, neváhejte mě kontaktovat.
             </p>
             
             <div className="space-y-4">
@@ -83,6 +83,18 @@ export function Contact() {
                   <Mail className="w-5 h-5" strokeWidth={1.5} />
                 </div>
                 <span>piter.mikeska@gmail.com</span>
+              </a>
+              
+              <a 
+                href="tel:+420773426330"
+                className="flex items-center gap-4 text-neutral-700 hover:text-neutral-900 transition-colors"
+                itemProp="telephone"
+                aria-label="Telefon: +420 773 426 330"
+              >
+                <div className="w-10 h-10 border-2 border-neutral-300 flex items-center justify-center" aria-hidden="true">
+                  <Phone className="w-5 h-5" strokeWidth={1.5} />
+                </div>
+                <span>+420 773 426 330</span>
               </a>
               
               <a 

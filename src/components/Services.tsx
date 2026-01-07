@@ -31,7 +31,7 @@ export function Services() {
   ];
 
   return (
-    <SectionWrapper id="services" title="Specializace" background="gray">
+    <SectionWrapper id="services" title="Služby" background="gray">
       <section itemScope itemType="https://schema.org/Service" aria-label="Nabízené služby a specializace">
         <div className="grid grid-cols-2 gap-8">
           {services.map((service, index) => (

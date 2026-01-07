@@ -17,13 +17,7 @@ export function Projects() {
       tags: ['GIS', 'Klima', 'PostGIS', 'Web',],
       url: 'https://github.com/MetrPikeska/geote-klima-ui'
     }
-    ,
-    {
-      title: 'Geo Places Quiz – interaktivní geografický kvíz',
-      description: 'Interaktivní webová aplikace zaměřená na procvičování geografických znalostí formou kvízu. Projekt kombinuje práci s geografickými daty, mapovou logiku a webové technologie s cílem vytvořit zábavný a edukativní nástroj.',
-      tags: ['Web', 'JavaScript', 'PostGIS', 'Interaktivní aplikace'],
-      url: 'https://github.com/MetrPikeska/geo-places-quiz'
-    }
+    
     ,
     {
       title: 'VYGEO OPALENA – interaktivní GIS pro správu lyžařského areálu',
@@ -34,12 +28,20 @@ export function Projects() {
     {
       title: 'Znečištění ovzduší v Moravskoslezském kraji – kartografická analýza',
       description: 'Semestrální kartografická práce zaměřená na analýzu a vizualizaci znečištění ovzduší v Moravskoslezském kraji. Projekt využívá prostorová data o koncentracích vybraných znečišťujících látek a jejich kartografické zpracování formou analytických map, kartogramů a syntetických map. Součástí práce je typizace a regionalizace území na základě míry imisní zátěže s cílem přehledně interpretovat prostorové vzorce a regionální rozdíly kvality ovzduší.',
-      tags: ['Kartografie', 'GIS', 'Ovzduší', 'Analytické mapy', 'Typizace']
+      tags: ['Kartografie', 'GIS', 'Ovzduší', 'Analytické mapy', 'Typizace'],
+      url: 'https://petrmikeska.cz/sykar2026_kapitola_Mikeska.pdf'
     },
     {
       title: 'Ski Cam Analytics – AI analýza kamerových dat',
       description: 'Analytický projekt zaměřený na zpracování a vyhodnocování kamerových dat z lyžařského areálu pomocí metod počítačového vidění. Řešení využívá YOLO knihovnu pro detekci objektů a skriptové zpracování dat v Pythonu s cílem získávat provozní informace využitelné v GIS a webových aplikacích.',
-      tags: ['AI', 'Computer Vision', 'YOLO', 'Python', 'Analýza dat']
+      tags: ['AI', 'Computer Vision', 'YOLO', 'Python', 'Analýza dat'],
+      url: 'https://github.com/MetrPikeska/ski-cam-analytics'
+    },
+    {
+      title: 'Geo Places Quiz – interaktivní geografický kvíz',
+      description: 'Interaktivní webová aplikace zaměřená na procvičování geografických znalostí formou kvízu. Projekt kombinuje práci s geografickými daty, mapovou logiku a webové technologie s cílem vytvořit zábavný a edukativní nástroj.',
+      tags: ['Web', 'JavaScript', 'PostGIS', 'Interaktivní aplikace'],
+      url: 'https://github.com/MetrPikeska/geo-places-quiz'
     }
 
 
