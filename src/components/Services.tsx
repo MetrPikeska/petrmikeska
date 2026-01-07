@@ -5,25 +5,25 @@ import { ServiceCard } from './ServiceCard';
 export function Services() {
   const services = [
     {
-      title: 'GIS a prostorové analýzy',
-      description: 'Vektorová a rastrová analýza, prostorové modelování, PostGIS pracovní postupy a analytické vyhodnocování prostorových datových sad.'
+      title: 'Geoinformatika & prostorové analýzy',
+      description: 'Analýza prostorových dat (vektor, raster), práce s gridy, typizace a regionalizace území, GIS automatizace a modelování.'
     },
     {
-      title: 'Webové mapové aplikace',
-      description: 'Návrh a vývoj interaktivních webových map a geoprostorových rozhraní založených na moderních webových technologiích.'
+      title: 'Webové mapy & aplikace',
+      description: 'Interaktivní mapové prohlížeče, mapové webové aplikace (Leaflet), vizualizace dat a analytické dashboardy.'
     },
     {
-      title: 'Dálkový průzkum a klimatická data',
-      description: 'Zpracování a analýza satelitních a klimatických datových sad, časových řad a environmentálních ukazatelů.'
+      title: 'Computer Vision & analýza obrazu',
+      description: 'Zpracování záznamů z kamer, detekce objektů pomocí YOLO a AI modelů, prostorová interpretace obrazových dat v kontextu GIS.'
     },
     {
-      title: 'Python a automatizace',
-      description: 'Python skripty pro zpracování dat, automatizaci GIS a backend logiku pro geoprostorové aplikace.'
+      title: '3D data & terén',
+      description: '3D modely terénu, práce s výškopisem (DEM/DSM), analýza sklonu, orientace a objemu.'
     }
   ];
 
   return (
-    <SectionWrapper id="services" title="Co dělám" background="gray">
+    <SectionWrapper id="services" title="Specializace" background="gray">
       <div className="grid grid-cols-2 gap-8">
         {services.map((service, index) => (
           <ServiceCard key={index} {...service} />

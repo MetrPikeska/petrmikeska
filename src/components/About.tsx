@@ -22,7 +22,7 @@ export function About() {
               >
                 Střední škole informačních technologií
               </a>
-              , kde jsem absolvoval obor Počítačové systémy a správa sítí s maturitou. Studium bylo zaměřeno na informační technologie, správu systémů, sítě a základy programování.
+              , kde jsem absolvoval obor Počítačové systémy a správa sítí zakončený maturitní zkouškou. Studium bylo zaměřeno na informační technologie, správu systémů, počítačové sítě a základy programování.
             </p>
             <p>
               Bakalářské studium Geoinformatiky a kartografie jsem absolvoval na{' '}

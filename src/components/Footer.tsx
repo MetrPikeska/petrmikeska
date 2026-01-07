@@ -9,7 +9,7 @@ export function Footer() {
           <div className="col-span-6">
             <h3 className="mb-4 tracking-wider">PETR MIKESKA</h3>
             <p className="text-neutral-400">
-              Geoinformatika a GIS analytik
+              Geoinformatik a GIS analytik specializující se na vývoj webových mapových aplikací a prostorové analýzy.
             </p>
           </div>
           
@@ -44,7 +44,7 @@ export function Footer() {
         
         <div className="pt-8 flex justify-between items-center text-neutral-400 text-sm">
           <p>© 2026 petrmikeska.cz</p>
-          <p>Petr Mikeska — Geoinformatik a GIS analytik</p>
+          <p>Petr Mikeska</p>
         </div>
       </div>
     </footer>
