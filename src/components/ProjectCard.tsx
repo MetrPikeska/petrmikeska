@@ -5,10 +5,11 @@ interface ProjectCardProps {
   title: string;
   description: string;
   tags: string[];
+  url?: string;
 }
 
-export function ProjectCard({ title, description, tags }: ProjectCardProps) {
-  return (
+export function ProjectCard({ title, description, tags, url }: ProjectCardProps) {
+  const CardContent = (
     <div className="border-2 border-neutral-300 bg-white hover:border-neutral-900 transition-colors group">
       <div className="p-8">
         <div className="flex justify-between items-start mb-4">
@@ -35,4 +36,14 @@ export function ProjectCard({ title, description, tags }: ProjectCardProps) {
       </div>
     </div>
   );
+
+  if (url) {
+    return (
+      <a href={url} target="_blank" rel="noopener noreferrer" className="block">
+        {CardContent}
+      </a>
+    );
+  }
+
+  return CardContent;
 }

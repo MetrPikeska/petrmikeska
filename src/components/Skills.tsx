@@ -17,7 +17,7 @@ export function Skills() {
   ];
 
   return (
-    <SectionWrapper id="skills" title="Technologie a nástroje" background="gray">
+    <SectionWrapper id="skills" title="Specializace" background="gray">
       <div className="grid grid-cols-5 gap-6">
         {skills.map((skill, index) => {
           const Icon = skill.icon;

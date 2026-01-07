@@ -9,7 +9,7 @@ export function Navigation({ activeSection, onNavigate }: NavigationProps) {
   const navItems = [
     { id: 'home', label: 'Domů' },
     { id: 'about', label: 'O mně' },
-    { id: 'skills', label: 'Dovednosti' },
+    { id: 'skills', label: 'Specializace' },
     { id: 'projects', label: 'Projekty' },
     { id: 'services', label: 'Služby' },
     { id: 'contact', label: 'Kontakt' }

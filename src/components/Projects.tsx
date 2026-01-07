@@ -7,25 +7,29 @@ export function Projects() {
     {
     title: 'Bakalářská práce – dostupnost zelených ploch ve městech',
     description: 'Vývoj uživatelského GIS toolboxu pro hodnocení dostupnosti zelených ploch a parků pro obyvatele měst. Řešení využívá prostorové analýzy, síťovou analýzu a automatizované zpracování dat s cílem podpořit rozhodování v oblasti územního plánování a kvality života ve městech.',
-    tags: ['GIS', 'Python', 'Prostorové analýzy', 'Výzkum']
+    tags: ['GIS', 'Python', 'Prostorové analýzy', 'Výzkum'],
+    url: 'https://www.geoinformatics.upol.cz/dprace/bakalarske/mikeska25/'
     }
     ,
     {
       title: 'GEOTE Klima – webová platforma pro klimatická data',
       description: 'Webová aplikace pro analýzu a vizualizaci klimatických a environmentálních dat. Projekt propojuje prostorová data uložená v PostGIS s REST API a interaktivním webovým rozhraním, které umožňuje přehlednou práci s klimatickými indikátory, mapami a grafy.',
-      tags: ['GIS', 'Klima', 'PostGIS', 'Web',]
+      tags: ['GIS', 'Klima', 'PostGIS', 'Web',],
+      url: 'https://github.com/MetrPikeska/geote-klima-ui'
     }
     ,
     {
       title: 'Geo Places Quiz – interaktivní geografický kvíz',
       description: 'Interaktivní webová aplikace zaměřená na procvičování geografických znalostí formou kvízu. Projekt kombinuje práci s geografickými daty, mapovou logiku a webové technologie s cílem vytvořit zábavný a edukativní nástroj.',
-      tags: ['Web', 'JavaScript', 'PostGIS', 'Interaktivní aplikace']
+      tags: ['Web', 'JavaScript', 'PostGIS', 'Interaktivní aplikace'],
+      url: 'https://github.com/MetrPikeska/geo-places-quiz'
     }
     ,
     {
       title: 'VYGEO OPALENA – interaktivní GIS pro správu lyžařského areálu',
       description: 'Webová GIS aplikace pro správu, monitoring a analýzu prostorových dat v lyžařském areálu Opálená v Beskydech. Projekt propojuje webové mapy, geoinformatiku a IoT prvky pro práci s provozními daty, počasím, výškovými informacemi a fotografickou dokumentací. Součástí jsou analytické nástroje, autentizace uživatelů a experimentální AI detekce objektů pomocí modelu YOLOv8.',
-      tags: ['GIS', 'Webové mapy', 'IoT', 'AI', 'PostGIS', 'Vývoj']
+      tags: ['GIS', 'Webové mapy', 'IoT', 'AI', 'PostGIS', 'Vývoj'],
+      url: 'https://github.com/MetrPikeska/VYGEO'
     },
     {
       title: 'Znečištění ovzduší v Moravskoslezském kraji – kartografická analýza',
