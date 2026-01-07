@@ -30,7 +30,7 @@ export function Hero({ onNavigate }: HeroProps) {
               Geoinformatika & vývoj webových mapových aplikací
             </h2>
             <p className="text-neutral-700 max-w-2xl text-lg">
-              Student geoinformatiky a kartografie se zaměřením na programování a webové technologie. Propojuji GIS, databáze a webové nástroje do praktických mapových řešení.
+              Student geoinformatiky a kartografie se zaměřením na programování, webové technologie a computer vision. Propojuji GIS, databáze a webové nástroje do praktických mapových řešení.
             </p>
           </div>
           

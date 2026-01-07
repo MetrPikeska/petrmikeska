@@ -17,11 +17,12 @@ export function About() {
                 href="https://www.ssinfotech.cz" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-neutral-900 hover:underline"
+                style={{ color: '#0066cc', textDecoration: 'underline', fontWeight: '600' }}
+                className="hover:opacity-80"
               >
                 Střední škole informačních technologií
               </a>
-              , kde jsem absolvoval obor Počítačové systémy a správa sítí zakončený maturitní zkouškou. Studium bylo zaměřeno na informační technologie, správu systémů, počítačové sítě a základy programování.
+              , kde jsem absolvoval obor Počítačové systémy a správa sítí s maturitou. Studium bylo zaměřeno na informační technologie, správu systémů, sítě a základy programování.
             </p>
             <p>
               Bakalářské studium Geoinformatiky a kartografie jsem absolvoval na{' '}
@@ -29,7 +30,8 @@ export function About() {
                 href="https://geoinformatics.upol.cz" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-neutral-900 hover:underline"
+                style={{ color: '#0066cc', textDecoration: 'underline', fontWeight: '600' }}
+                className="hover:opacity-80"
               >
                 Katedře geoinformatiky Univerzity Palackého v Olomouci
               </a>
@@ -38,7 +40,8 @@ export function About() {
                 href="https://geoinformatics.upol.cz/dprace/bakalarske/mikeska25" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-neutral-900 hover:underline"
+                style={{ color: '#0066cc', textDecoration: 'underline', fontWeight: '600' }}
+                className="hover:opacity-80"
               >
                 zde
               </a>
@@ -54,8 +57,8 @@ export function About() {
           <img 
             src={jaImage} 
             alt="Petr Mikeska" 
-            className="w-full aspect-square object-cover border-2 border-neutral-300"
-            style={{ borderRadius: '8px' }}
+            className="w-full object-contain border-2 border-neutral-300"
+            style={{ borderRadius: '8px', marginTop: '-2rem' }}
           />
         </div>
       </div>
