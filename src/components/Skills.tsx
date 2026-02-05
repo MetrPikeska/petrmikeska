@@ -52,7 +52,7 @@ export function Skills() {
   ];
 
   return (
-    <SectionWrapper id="skills" title="Zkušensoti & dovednosti">
+    <SectionWrapper id="skills" title="Zkušenosti & dovednosti" background="gray">
       <div className="space-y-12">
         {skillCategories.map((category, catIndex) => (
           <div key={catIndex}>

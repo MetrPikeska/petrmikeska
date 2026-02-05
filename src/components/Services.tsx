@@ -1,6 +1,7 @@
 import React from 'react';
 import { SectionWrapper } from './SectionWrapper';
 import { ServiceCard } from './ServiceCard';
+import backgroundImage from '../assets/background.jpg';
 
 export function Services() {
   const services = [
@@ -31,7 +32,16 @@ export function Services() {
   ];
 
   return (
-    <SectionWrapper id="services" title="Služby" background="gray">
+    <SectionWrapper 
+      id="services" 
+      title="Služby" 
+      style={{ 
+        backgroundImage: `linear-gradient(rgba(245, 245, 245, 0.9), rgba(245, 245, 245, 0.9)), url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}
+    >
       <section itemScope itemType="https://schema.org/Service" aria-label="Nabízené služby a specializace">
         <div className="grid grid-cols-2 gap-8">
           {services.map((service, index) => (
